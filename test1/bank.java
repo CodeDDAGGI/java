@@ -22,7 +22,7 @@ public class bank {
 			else if(choice == 2) {
 				System.out.println("출금 금액 입력 >> ");
 				int withdraw = sc.nextInt();
-				if(money > withdraw) {
+				if(money >= withdraw) {
 				money = money - withdraw;
 				System.out.println("잔액 >> " + money);
 				}else {
